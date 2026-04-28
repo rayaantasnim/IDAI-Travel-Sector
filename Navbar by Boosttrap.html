@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDAI travel agency</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="Nav.css">
+
+    <style>
+        #c{
+            width:0%;
+        }
+
+        h2{
+            font-weight: bold;
+            text-align: center;
+        }
+
+        p{
+            margin-bottom: 40px;
+        }
+
+.first {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #1f2d3d;
+    text-align: center;
+    margin: 30px auto;
+    max-width: 900px;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+}
+
+.carousel-item{
+    img{
+        width: 50% !important;
+        height: auto;
+    }
+}
+
+.first span {
+    color: #f39c12;   /* IDAI শব্দ হাইলাইট */
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Carousel responsive control */
+@media (max-width: 1100px) {
+    .car {
+        margin: 0 auto;
+    }
+
+    .car .carousel-item img {
+        width: 80% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .car .carousel-item img {
+        width: 95% !important;
+    }
+
+    .car {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .car .carousel-item img {
+        width: 100% !important;
+    }
+}
+
+
+        @media (max-width: 1100px) {
+          #c{
+            width:20%;
+          }
+
+          #d{
+            width:75% !important;
+          }
+        }
+    </style>
+</head>
+<body style="background:#F5F0E6;">
+        <div id="layout" class="d-flex"> 
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <img src="Logo f.png" id="special-image">
+      <a class="navbar-brand" href="#">Travel Dashboard</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" aria-controls="navbarNav" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link special" href="Navbar by Boosttrap.html">Home Page</a></li>
+          <li class="nav-item"><a class="nav-link" href="Reserve.html">Our packages</a></li>
+          <li class="nav-item"><a class="nav-link" href="Offer.html">Book a ticket</a></li>
+          <li class="nav-item"><a class="nav-link" href="Spots.html">Most Popular Spots</a></li>
+          <li class="nav-item"><a class="nav-link" href="Service.html">Services</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+        </div>
+
+    <!-- Main Content -->
+    <div class="flex-grow-1 p-4" id="main-content" style="margin-top:20px; margin-left:220px;">
+        <center>
+            <img src="Poster.jpg" style="width:20%; background:lightyellow; padding:10px; border:2px solid black;" id="d">
+        </center>
+        <u>
+            <b class="top fw-bold">
+                <p class="first"><center>
+                    Welcome to <span>IDAI</span>: a sanctuary for travelers, where every journey feels like heaven.
+                </p></center>
+        </u>
+
+        <div class="serve">
+            <p  class="para">
+                In a world increasingly defined by speed, distraction, and emotional fatigue, IDAI emerges not merely as a travel agency, but as a mythic gateway to inner restoration. It reimagines travel as a cinematic ritual—where every journey is a scene, every destination a revelation, and every traveler a protagonist in their own unfolding story. Through this lens, travel becomes more than movement; it becomes meaning.<br><br>
+
+                At the heart of IDAI’s philosophy is the belief that travel can elevate the human spirit. Unlike conventional agencies that focus on logistics and sightseeing, IDAI curates experiences around emotional rhythm and symbolic transformation. Whether one boards a train, plane, or cruise ship, the act is not transactional—it is intentional. The traveler steps into a narrative crafted to evoke serenity, elegance, or indulgence, depending on their emotional needs. This multi-modal approach allows individuals to choose journeys that resonate with their inner state, offering not just variety, but emotional precision.<br><br>
+
+                IDAI’s commitment to emotional restoration is radical in its depth. In a time when many feel disconnected, overwhelmed, or exhausted, IDAI offers travel as a form of healing. Spacious seating, quiet lounges, curated entertainment, and nourishing meals are not luxuries—they are instruments of care. The agency understands that true transformation begins with presence, and it designs every detail to support that presence. Travelers are invited to breathe, reflect, and reconnect—not just with the world, but with themselves.<br><br>
+
+                Moreover, IDAI’s eco-conscious design reflects a profound respect for both the planet and the psyche. High-speed trains powered by low-emission technology, sustainable cruise protocols, and responsibly sourced meals are all part of a larger philosophy: that restoration must be slow, intentional, and sustainable. By aligning ecological care with emotional care, IDAI offers a model of travel that is both responsible and resonant. Travelers are not just seeing the world—they are honoring it.<br><br></p>
+
+                <center>
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade car">
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                                <img src="Plane.jpg" class="d-block w-50" alt="...">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="Cockpit.jpg" class="d-block w-50" alt="...">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="Spacious Seating and Competitive Pricing.jpg" class="d-block w-50" alt="...">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="Flight.jpg" class="d-block w-50" alt="...">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="Gourmet Meals and Family Services.jpg" class="d-block w-50">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="Ship.jpg" class="d-block w-50">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="Bedroom.jpg" class="d-block w-50">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="IDAI Cruises – Spas, Activities, and Programs.jpg" class="d-block w-50">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="Aeroplane.jpg" class="d-block w-50">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="In-Flight Entertainment and Wi-Fi.jpg" class="d-block w-50">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="Bullet Train.jpg" class="d-block w-50">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="Comfort and Design.jpg" class="d-block w-50">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="Efficiency and Reliability.jpg" class="d-block w-50">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="Boat.jpg" class="d-block w-50">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="IDAI-Logo.jpg" class="d-block w-50">
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        
+                        <span class="carousel-control-prev-icon bg-warning but1" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-warning but2" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div></center><br><br>
+
+            <p>
+                Inclusivity is another cornerstone of IDAI’s approach. Families, couples, solo travelers, elders, and children are all welcomed into emotionally safe environments. Staff are trained not just in service, but in presence—knowing when to offer support and when to step back. This attentiveness ensures that every traveler feels seen, respected, and held. It transforms hospitality from a function into a feeling.<br><br>
+
+                Even time is treated with reverence. IDAI’s routes are punctual, its systems frictionless, and its rhythm supportive of emotional clarity. Travelers arrive not just on time, but in alignment. This precision without pressure makes IDAI ideal for professionals, students, and anyone seeking both agency and serenity.<br><br>
+
+                Dining, too, becomes ritual. Meals are cinematic experiences—crafted with taste, texture, and memory in mind. Whether it’s a quiet breakfast on a train or a candlelit dinner on a cruise, food becomes a scene in the traveler’s emotional journey. Entertainment is curated to match mood, and connectivity is offered as an extension of presence—not a distraction.<br><br>
+
+                Ultimately, IDAI’s mythic branding and emotional resonance set it apart. It doesn’t just market—it evokes. Every visual element, from logo to color palette, invites travelers into a story of agency, freedom, and restoration. In choosing IDAI, one chooses not just a destination, but a transformation. Travel becomes a sacred act, and the traveler becomes whole.
+            </p><br><br><br>
+
+            <h2>Why IDAI is the best choice?</h2><br>
+
+            <center>
+                <img src="14.jpg">
+            </center><br>
+
+            <h3>Cinematic Philosophy of Travel:</h3>
+            <p>
+                IDAI doesn’t just organize trips—it curates cinematic experiences. Every journey is treated as a scene, every destination as a revelation. We design travel not around logistics, but around emotional rhythm and symbolic transformation. Whether you’re boarding a train, plane, or cruise, you’re stepping into a narrative crafted with intention. This mythic approach sets IDAI apart from conventional agencies. We don’t sell tickets—we offer portals. Our travelers become protagonists, not passengers. The result is a deeper connection to the journey, where movement becomes meaning, and destinations become metaphors for growth, peace, and agency.
+            </p>
+
+            <h3>Multi-Modal Luxury Packages:</h3>
+            <p>
+                IDAI offers three distinct travel modes—high-speed train, airplane, and cruise ship—each with its own cinematic tone and emotional texture. These aren’t generic options; they’re curated experiences tailored to different states of being. The train package evokes grounded serenity, the airplane package offers elevated elegance, and the cruise package invites immersive indulgence. Each mode is designed with premium amenities, thoughtful design, and emotional clarity. Travelers can choose based on mood, purpose, or symbolic resonance. This multi-modal flexibility ensures that IDAI can serve a wide spectrum of needs while maintaining a consistent standard of excellence.
+            </p>
+
+            <center>
+                <img src="Landed plane.jpg"><br><br>
+            </center>
+
+            <h3>Emotional Restoration at the Core:</h3>
+            <p>
+                Unlike agencies that focus solely on sightseeing or convenience, IDAI centers emotional restoration. We understand that modern travelers are often exhausted, disconnected, or overwhelmed. Our packages are designed to offer not just movement, but healing. From spacious seating and quiet lounges to curated entertainment and healthy meals, every detail is chosen to support your emotional rhythm. Whether you seek solitude, companionship, or reflection, IDAI creates space for you to breathe. We don’t just take you somewhere—we bring you back to yourself. That’s why our travelers return not just refreshed, but transformed.
+            </p>
+
+            <center>
+                <img src="Emotional Restoration at the Core.jpg"><br><br>
+            </center>
+
+            <h3>Eco-Conscious and Sustainable Design:</h3>
+            <p>
+                IDAI believes in travel that respects the planet. Our high-speed trains are powered by low-emission technology, and our cruise ships follow strict sustainability protocols. Meals are sourced responsibly, and waste is minimized through thoughtful planning. But sustainability isn’t just environmental—it’s emotional. We design experiences that are slow, intentional, and restorative, reducing the burnout often associated with fast-paced tourism. By aligning ecological care with emotional care, IDAI offers a model of travel that’s both responsible and resonant. You’re not just seeing the world—you’re honoring it.
+            </p>
+
+            <center>
+                <img src="Eco-Conscious and Sustainable Design.jpg"><br><br>
+            </center>
+
+            <h3>Inclusive for All Travelers:</h3>
+            <p>
+                IDAI is built for everyone—families, couples, solo travelers, elders, and children. Our environments are inclusive, accessible, and emotionally safe. Staff are trained in empathy and attentiveness, ensuring that every traveler feels seen and supported. From family-friendly entertainment to elder-friendly seating and assistance, we design with care across generations. We don’t treat travelers as demographics—we treat them as individuals with unique emotional needs. That’s why our packages feel personal, even when shared. Whether you’re seeking connection or solitude, IDAI welcomes you with grace.
+            </p>
+
+            <center>
+                <img src="Inclusive for All Travelers.jpg"><br><br>
+            </center>
+
+            <h3>Precision, Punctuality, and Peace:</h3>
+            <p>
+                Time is sacred, and IDAI honors it with precision. Our routes are reliable, our flights punctual, and our cruises smoothly orchestrated. But beyond logistics, we offer peace. You’re not rushing—you’re flowing. Our systems reduce friction, eliminate chaos, and create a rhythm that supports emotional clarity. You arrive not just on time, but in alignment. This commitment to structure without stress makes IDAI ideal for professionals, students, and anyone who values both agency and serenity. We don’t just move you—we guide you.
+            </p>
+
+            <h3>Gourmet Dining as Ritual:</h3>
+            <p>
+                At IDAI, meals are more than nourishment—they’re rituals of taste, texture, and memory. Our chefs prepare international cuisines with artistry, turning dining into a cinematic experience. Whether you’re enjoying a quiet breakfast on a train or a candlelit dinner on a cruise, the ambiance is curated to evoke emotion. Dietary preferences are honored, and presentation is never rushed. We believe food is a form of storytelling, and every dish becomes a scene. This attention to culinary detail elevates the entire journey, making even mealtime a moment of restoration.
+            </p>
+
+            <center>
+                <img src="Gourmet Meals and Family Services.jpg"><br><br>
+            </center>
+
+            <h3>Curated Entertainment and Connectivity:</h3>
+            <p>
+                We offer high-speed Wi-Fi and curated entertainment across all packages—not as distractions, but as immersive extensions of the journey. Films, music, and reading materials are selected to match the emotional tone of travel. Whether you want to escape, engage, or reflect, the content supports your mood. You’re not just watching—you’re feeling. And if you choose to disconnect, the environment supports that too. This balance of connection and presence makes IDAI ideal for both digital nomads and mindful travelers. We don’t just offer screens—we offer scenes.
+            </p>
+
+            <center>
+                <img src="Curated Entertainment and Connectivity.jpg"><br><br>
+            </center>
+
+            <h3>Staff Trained in Presence:</h3>
+            <p>
+                Our team is not just trained in service—they’re trained in presence. From check-in to farewell, our staff offer support with grace, discretion, and emotional intelligence. They know when to step forward and when to step back. Whether you need assistance, reassurance, or silence, they respond with care. This human touch transforms the experience from transactional to relational. You’re not just served—you’re seen. And that makes all the difference. At IDAI, hospitality is not a function—it’s a feeling.
+            </p>
+
+            <h3>Mythic Branding and Emotional Resonance:</h3>
+            <p>
+                IDAI’s brand is built on mythic symbolism, cinematic contrast, and emotional depth. From our logo to our color palette, every visual element reflects agency, freedom, and restoration. We don’t just market—we evoke. Our design language invites travelers into a story, a ritual, a transformation. This emotional resonance sets us apart in a crowded industry. We’re not just recognizable—we’re unforgettable. When you choose IDAI, you’re choosing a journey that honors your inner world as much as your outer one.
+            </p>
+
+            <center>
+                <img src="Mythic Branding and Emotional Resonance.jpg">
+            </center><br><br>
+        </div>      
+
+        <div class="power">
+            <center>
+                <h6>Powered By:</h6>
+                <a href="https://rayaantasnim.github.io/username.github.io-IDAI-company-/"><img src="Final Logo.png"></a>
+            </center>
+        </div>
+
+        <footer>
+            <p style="margin-bottom: 0px !important;">© IDAI Travel Agency. All content, imagery, and design elements are the intellectual property of IDAI and may not be reproduced without permission. Use of this site constitutes acceptance of our Terms of Service and Privacy Policy. IDAI is committed to ethical travel experiences and transparent policies—please review our disclaimers for full details.</p>
+        </footer>  
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

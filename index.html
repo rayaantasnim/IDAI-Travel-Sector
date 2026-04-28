@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign in</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    min-height:100vh;
+    background:#17a2b8;
+}
+
+.hero{
+    text-align:center;
+    padding-top:20px;
+    color:#fff;
+}
+
+#special-image{
+    width:30%;
+    padding:14px;
+    background:rgba(255,255,255,0.9);
+    border-radius:20px;
+}
+
+form{
+    margin:30px auto;
+    padding:30px;
+    width:400px;
+    background:#fff;
+    border-radius:12px;
+}
+
+label{
+    display:block;
+    font-weight:600;
+    margin-bottom:6px;
+    color:#343a40;
+}
+
+input[type=text],input[type=password],input[type=number],input[type=email]{
+    width:100%;
+    padding:10px;
+    border:1px solid #333;
+    border-radius:6px;
+}
+
+input:focus{
+    outline:none;
+    border-color:#ffc107;
+}
+
+.confirm-box{
+    margin-top:12px;
+    padding:12px;
+    background:#fff9db;
+    border:1px solid #ffc107;
+    border-radius:8px;
+    font-size:14px;
+}
+
+.confirm-box input[type=checkbox]{
+    width:16px;
+    height:16px;
+    margin-right:8px;
+}
+
+#error{
+    color:red;
+    text-align:center;
+    font-size:20px;
+    margin-top:10px;
+    font-weight:bold;
+}
+
+button{
+    padding:12px 30px;
+    font-size:16px;
+    border:none;
+    border-radius:8px;
+    background:#ffc107;
+    cursor:pointer;
+}
+
+@media (max-width: 1100px){
+    #special-image{
+        width: 45%;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+<br>
+<img src="Logo f.png" id="special-image">
+
+<u><i>
+<h1 style="font-size:25px;">
+Welcome to IDAI Universe.<br>
+Please enter your informations correctly to sign in.
+</h1>
+</i></u>
+</div>
+
+<form onsubmit="return valid()" action="Navbar by Boosttrap.html">
+
+<label>Name:</label>
+<input type="text" id="name"><br><br>
+
+<label>Username:</label>
+<input type="text" id="us"><br><br>
+
+<label>Gmail:</label>
+<input type="email" id="mail"><br><br>
+
+<label>Passcode:</label>
+<input type="password" id="pass"><br><br>
+
+<label>Occupation:</label>
+<input type="text" id="prof"><br><br>
+
+<label>Contact:</label>
+<input type="number" id="com"><br><br>
+
+<div class="confirm-box">
+<input type="checkbox" id="confirm">
+<label for="confirm" style="display:inline;font-weight:normal;">
+I hereby confirm that all the information provided above is accurate and complete to the best of my knowledge.
+</label>
+</div>
+
+<h2 id="error"></h2><br>
+
+<center>
+<button type="submit">Sign in</button>
+</center>
+
+</form>
+
+<script>
+function valid(){
+    var uname=document.getElementById("name");
+    var mail=document.getElementById("mail");
+    var pass=document.getElementById("pass");
+    var com=document.getElementById("com");
+    var error=document.getElementById("error");
+    var us=document.getElementById("us");
+    var prof=document.getElementById("prof");
+    var confirmBox=document.getElementById("confirm");
+
+    if(uname.value.trim()==""){
+        error.innerText="Name required";
+        alert("Name required");
+        return false;
+    }
+    else if(us.value.trim()==""){
+        error.innerText="Username required";
+        alert("Username required");
+        return false;
+    }
+    else if(mail.value.trim()==""){
+        error.innerText="Email required";
+        alert("Email required");
+        return false;
+    }
+    else if(pass.value.length<8){
+        error.innerText="Password must be 8+ characters";
+        alert("Password must be 8+ characters");
+        return false;
+    }
+    else if(prof.value.trim()==""){
+        error.innerText="Occupation required";
+        alert("Occupation required");
+        return false;
+    }
+    else if(com.value.length!=11){
+        error.innerText="Invalid contact number";
+        alert("Invalid contact number");
+        return false;
+    }
+    else if(!confirmBox.checked){
+        error.innerText="Please confirm declaration";
+        alert("Please confirm declaration");
+        return false;
+    }
+
+    return true;
+}
+</script>
+
+</body>
+</html>

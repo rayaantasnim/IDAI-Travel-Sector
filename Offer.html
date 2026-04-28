@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IDAI Ticket Booking</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="Nav.css">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f8ff;
+    }
+
+    /* Booking Form Card */
+    .booking-card {
+      max-width: 600px;
+      margin: 100px auto 40px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      padding: 30px;
+      margin-top: 20px !important;
+    }
+    .booking-card h2 {
+      text-align: center;
+      font-family: Algerian, serif;
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #ff4500;
+    }
+    .booking-card label {
+      font-weight: 600;
+      margin-top: 10px;
+    }
+    .booking-card input,
+    .booking-card select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+    .booking-card input:focus,
+    .booking-card select:focus {
+      border-color: #ff8c00;
+      outline: none;
+      box-shadow: 0 0 6px #ff8c00;
+    }
+
+    /* Confirmation Checkbox */
+    .form-check {
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+    }
+    .form-check-input {
+      width: 18px;
+      height: 18px;
+      border: 2px solid #ff8c00;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-right: 8px; /* small gap before message */
+    }
+    .form-check-input:checked {
+      background-color: #28a745;
+      border-color: #28a745;
+    }
+    .form-check-input:checked::after {
+      content: "✔";
+      color: white;
+      font-size: 12px;
+      position: relative;
+      left: 2px;
+      top: -2px;
+    }
+    .form-check-label {
+      font-size: 14px;
+      font-weight: 500;
+      color: #333;
+    }
+
+    .booking-card button {
+      display: block;
+      margin: 20px auto 0 auto;
+      padding: 10px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      background: linear-gradient(90deg, #ff8c00, #ff4500);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+    .booking-card button:hover {
+      transform: scale(1.05);
+      background: #ff6347;
+    }
+
+    #confirm{
+      width:15px;
+    }
+
+    /* Footer */
+    footer {
+      background: #ff8c00;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      width: auto;
+    }
+
+    #special-images{
+      margin-top: 10px;
+      width: 33%;
+      margin-bottom: 0px !important;
+    }
+
+    @media (max-width: 1100px){
+      #special-images{
+        width: 40%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <img src="Logo f.png" id="special-image">
+      <a class="navbar-brand" href="#">Travel Dashboard</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" aria-controls="navbarNav" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="Navbar by Boosttrap.html">Home Page</a></li>
+          <li class="nav-item"><a class="nav-link" href="Reserve.html">Our packages</a></li>
+          <li class="nav-item"><a class="nav-link special" href="Offer.html">Book a ticket</a></li>
+          <li class="nav-item"><a class="nav-link" href="Spots.html">Most Popular Spots</a></li>
+          <li class="nav-item"><a class="nav-link" href="Service.html">Services</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div>
+    <center>
+      <img src="IDAI-Logo.jpg" id="special-images">
+    </center>
+  </div>
+
+<!-- Booking Form -->
+<div class="booking-card">
+    <h2>🎫 Book a Ticket</h2>
+    <form action="Cong.html" onsubmit="return valid()">
+      <label>👤 Passenger Name:</label>
+      <input type="text" id="nam" class="bg-light" placeholder="Enter your name please:">
+
+      <label>🚗 Vehicle:</label>
+      <select id="veh" class="bg-light">
+        <option>⚙️ Choose</option>
+        <option>✈️ Airbus</option>
+        <option>🛫 Aeroplane</option>
+        <option>🛥️ Yacht</option>
+        <option>🚤 Boat</option>
+        <option>🚇 Metro Rail</option>
+        <option>🚢 Ship</option>
+      </select>
+
+      <label>🛫 Departure from:</label>
+      <select id="depart" class="bg-light">
+        <option>⚙️ Choose</option>
+        <option>🇶🇦 Qatar</option>
+        <option>🇧🇩 Bangladesh</option>
+        <option>🇮🇳 India</option>
+        <option>🇵🇰 Pakistan</option>
+        <option>🇦🇪 United Arab Emirates</option>
+        <option>🇸🇦 Saudi Arabia</option>
+        <option>🇹🇷 Turkey</option>
+        <option>🇬🇧 United Kingdom</option>
+        <option>🇫🇷 France</option>
+        <option>🇩🇪 Germany</option>
+        <option>🇮🇹 Italy</option>
+        <option>🇺🇸 United States</option>
+        <option>🇨🇦 Canada</option>
+        <option>🇦🇺 Australia</option>
+        <option>🇯🇵 Japan</option>
+        <option>🇹🇭 Thailand</option>
+      </select>
+
+      <label>🛬 Arrival to:</label>
+      <select id="arrive" class="bg-light">
+        <option>⚙️ Choose</option>
+        <option>🇶🇦 Qatar</option>
+        <option>🇧🇩 Bangladesh</option>
+        <option>🇮🇳 India</option>
+        <option>🇵🇰 Pakistan</option>
+        <option>🇦🇪 United Arab Emirates</option>
+        <option>🇸🇦 Saudi Arabia</option>
+        <option>🇹🇷 Turkey</option>
+        <option>🇬🇧 United Kingdom</option>
+        <option>🇫🇷 France</option>
+        <option>🇩🇪 Germany</option>
+        <option>🇮🇹 Italy</option>
+        <option>🇺🇸 United States</option>
+        <option>🇨🇦 Canada</option>
+        <option>🇦🇺 Australia</option>
+        <option>🇯🇵 Japan</option>
+        <option>🇹🇭 Thailand</option>
+      </select>
+
+      <label>🎯 Cause to go abroad:</label>
+      <select id="cause" class="bg-light">
+        <option>⚙️ Choose</option>
+        <option>🌍 Travel</option>
+        <option>💼 Business</option>
+        <option>🛠️ Work</option>
+        <option>📄 Job</option>
+        <option>🪪 Resident Card</option>
+        <option>✉️ Invitation</option>
+        <option>🤝 Meet Someone</option>
+      </select>
+
+      <label>📅 Date of Journey:</label>
+      <input type="date" id="date1" class="bg-light" placeholder="Select journey date">
+
+      <label>🛬 Date of Return:</label>
+      <input type="date" id="date2" class="bg-light" placeholder="Select return date">
+
+      <label>📧 Email:</label>
+      <input type="email" id="mail" class="bg-light" placeholder="Enter your email">
+
+      <!-- Confirmation Checkbox -->
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="confirm" required>
+        <label class="form-check-label" for="confirm">
+          I hereby confirm that all the information provided above is accurate and complete to the best of my knowledge.
+        </label>
+      </div>
+      
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+
+    <div class="power">
+            <center>
+                <h6>Powered By:</h6>
+                <a href="https://rayaantasnim.github.io/username.github.io-IDAI-company-/"><img src="Final Logo.png"></a>
+            </center>
+        </div>
+
+  <!-- Footer -->
+  <footer>
+    © IDAI Travel Agency. All rights reserved. Ethical travel experiences, transparent policies, and a commitment to humanity.
+  </footer>
+
+  <script src="Final.js"></script>
+</body>
+</html>

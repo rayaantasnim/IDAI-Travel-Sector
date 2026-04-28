@@ -1,0 +1,110 @@
+.para1{
+	font-size:20px;
+	font-family:Times New Roman;
+	text-align:center;
+}
+
+.para2{
+	font-size:30px;
+	font-family:Algerian;
+	text-align:center;
+}
+
+.para3{
+	font-family:Vrinda;
+	font-size:20px;
+	background:lightsalmon;
+	color:black;
+}
+
+.para4{
+	font-family:Vrinda;
+	font-size:17px;
+	background:lightskyblue;
+	color:black;
+	width:400px;
+	text-align:center;
+
+	input:hover{
+		background-color:white;
+		font-size:15px;
+		height:20px;
+		color:black;
+	}
+}
+
+.para5{
+	label{
+		background:lightskyblue;
+		color:black;
+	}
+
+	input{
+		background:lightskyblue;
+		color:black;
+	}
+}
+
+.para6{
+	padding:5px;
+	padding-top:15px;
+}
+
+button{
+	font-size:25px;
+	font-family:Vrinda;
+	text-align:center;
+	background:gold;
+	cursor:pointer;
+}
+
+button:hover{
+	transform:scale(1.3);
+	color:black;
+	background:linear-gradient(to right, lightyellow);
+	border-radius:35%;
+}
+
+input:hover{
+	background-color:lightpink;
+	color:black;
+	height:27px;
+	font-size:24px;
+}
+
+form{
+	font-size:22px;
+} 
+
+body{
+	background-color:lightblue;
+	background-size:50%;
+	background-attachment: fixed;
+	color:red;
+}
+
+select{
+	height:30px;
+	background:lightblue;
+	font-size:20px;
+}
+
+h4{
+	font-size:30px;
+	background:linear-gradient(lightpink,lightblue);
+	border-radius:35%;
+}
+
+h3{
+	font-size:45px;
+	background:linear-gradient(pink,lightblue);
+}
+
+p{
+	font-size:20px;
+	font-family:Vrinda;
+}
+
+.but{
+	height:40px;
+}
