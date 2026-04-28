@@ -57,6 +57,16 @@ img:active {
 
 /* Responsive Image */
 @media (max-width: 1100px) {
+.power{
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+
+    img{
+      margin: 0px !important;
+      padding: 5px;
+      width: 65%;
+    }
+  }
 
   .section.events img{
     width: 99%;
@@ -217,7 +227,7 @@ footer{
 .para {
   width: auto;
   text-align: justify;
-  margin-right: 20px;
+  margin: 0px;
   padding: 15px;
   border: 1.5px solid #1a6bed;
   border-radius: 10px;
